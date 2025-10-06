@@ -5,8 +5,8 @@ export default function Home() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
-          className="dark:invert"
-          src="/next.svg"
+          
+          src="https://cdn.shopify.com/s/files/1/0001/8857/9891/files/DALL_E_2023-11-15_12.21.15_-_A_vibrant_cityscape_at_night_showcasing_the_aesthetic_overlap_of_Synthwave_and_Cyberpunk._The_scene_includes_neon-lit_skyscrapers_with_holographic_adv_480x480.png?v=1700040151"
           alt="Next.js logo"
           width={180}
           height={38}
