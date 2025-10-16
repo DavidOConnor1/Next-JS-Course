@@ -1,6 +1,11 @@
 
-export default function Contact()
+export default async function Contact()
 {
     console.log("Is this server or client?");
-    return <div></div>
+    return ( <div>
+        {""}
+        <button onClick={() => alert("hello")}>Click Me</button>{""}
+
+    </div>
+    );
 }
