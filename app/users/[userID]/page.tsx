@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 
 async function fetchUser(id: string) {
     const res = await fetch(`http://jsonplaceholder.typicode.com/users/${id}`);
@@ -16,6 +17,10 @@ export default async function UserPage({params,
 {
     const { userID } = await params;
     const user = await fetchUser(userID);
+    if(!user)
+    {
+        notFound();
+    }
     return (<div> 
         <h1>{user.name}</h1>
         <p><strong>Email: </strong> {user.email} </p>
